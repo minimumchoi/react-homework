@@ -1,0 +1,19 @@
+.price_counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 84px;
+  border: 1px solid #c4c4c4;
+
+  button {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: none;
+
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+}
