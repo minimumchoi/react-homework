@@ -10,9 +10,9 @@
     @include size(22px, 22px);
     margin: 0;
     appearance: none;
-    background: url("/src/assets/input-unchecked.svg") no-repeat center/contain;
+    background: url("/input-unchecked.svg") no-repeat center/contain;
     &:checked {
-      background-image: url("/src/assets/input-checked.svg");
+      background-image: url("/input-checked.svg");
     }
   }
   a {
@@ -48,6 +48,6 @@
   &__delete {
     @include size(30px, 30px);
     border: none;
-    background: url("/src/assets/cancel.svg") no-repeat center/contain;
+    background: url("/cancel.svg") no-repeat center/contain;
   }
 }

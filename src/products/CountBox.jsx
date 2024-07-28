@@ -5,11 +5,11 @@ function CountBox({ quantity }) {
   return (
     <div class="price_counter">
       <button type="button" class="minus-button">
-        <img src="/src/assets/minus.svg" alt="수량 감소 버튼" />
+        <img src="/minus.svg" alt="수량 감소 버튼" />
       </button>
       <span class="counter">{quantity}</span>
       <button type="button" class="plus-button">
-        <img src="/src/assets/plus.svg" alt="수량 추가 버튼" />
+        <img src="/plus.svg" alt="수량 추가 버튼" />
       </button>
     </div>
   );
