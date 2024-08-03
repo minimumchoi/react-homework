@@ -1,6 +1,3 @@
-import React from "https://esm.sh/react";
-import { createRoot } from "https://esm.sh/react-dom";
-
 function CountBox({ quantity }) {
   return (
     <div class="price_counter">
