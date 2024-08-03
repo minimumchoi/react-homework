@@ -1,0 +1,23 @@
+@mixin flexAll($fd: row, $jc: left, $at: baseline, $gap: 0) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $at;
+  gap: $gap;
+}
+
+@mixin size($w: auto, $h: auto) {
+  width: $w;
+  inline-size: $w;
+  height: $h;
+  block-size: $h;
+}
+
+@mixin font($color: black, $fs: 1rem, $fw: normal, $lh: normal) {
+  color: $color;
+  font-family: Pretendard;
+  font-style: normal;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}

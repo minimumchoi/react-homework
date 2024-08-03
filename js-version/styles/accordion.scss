@@ -1,0 +1,53 @@
+@import "src/styles/mixins.scss";
+@import "src/styles/variables.scss";
+
+.cart__accordion {
+  height: 118px;
+  padding: 20px 0;
+  @include flexAll(row, left, center, 10px);
+
+  &__input {
+    @include size(22px, 22px);
+    margin: 0;
+    appearance: none;
+    background: url("/input-unchecked.svg") no-repeat center/contain;
+    &:checked {
+      background-image: url("/input-checked.svg");
+    }
+  }
+  a {
+    height: 100%;
+    @include flexAll(row, center, center, 10px);
+    text-decoration: none;
+    color: $darkBlack;
+    img {
+      @include size(60px, 78px);
+    }
+    label {
+      @include size(345px, 100%);
+      @include font($darkBlack, 1rem, 600, 150%);
+      @include flexAll(column, center, left, 0);
+      z-index: -100;
+    }
+  }
+
+  &__price {
+    @include size(127px, 24px);
+    @include font($darkBlack, 1rem, 600, 150%);
+
+    @include flexAll(column, center, end, 0);
+
+    &__value {
+      @include font($gray400, 0.875rem, 600, 170%);
+      text-decoration: line-through;
+      &.is__hide {
+        display: none;
+      }
+    }
+  }
+  &__delete {
+    @include size(30px, 30px);
+    border: none;
+    background: url("/cancel.svg") no-repeat center/contain;
+  }
+}
