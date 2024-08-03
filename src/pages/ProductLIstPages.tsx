@@ -1,5 +1,5 @@
-import Product from "/src/products/Product.jsx";
-import dataList from "/src/data/dataList.js";
+import Product from "../products/Product";
+import dataList from "../data/dataList";
 
 function ProductListPages() {
   return (

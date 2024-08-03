@@ -1,8 +1,16 @@
-import CountBox from "/src/products/CountBox.jsx";
-import formatPrice from "/src/lib/price";
-import InputBox from "/src/products/InputBox";
+import formatPrice from "../lib/price";
+import CountBox from "./CountBox";
+import InputBox from "./InputBox";
 
-function Product({ name, src, price, quantity, discount }) {
+interface Props {
+  name: string;
+  src: string;
+  price: number;
+  quantity: number;
+  discount: number;
+}
+
+function Product({ name, src, price, quantity, discount }: Props) {
   return (
     <div className="cart__accordion">
       <InputBox />
