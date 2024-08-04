@@ -18,11 +18,11 @@ function Product({ name, src, price, quantity, discount }) {
 }
 
 Product.propTypes = {
-  name: string,
-  src: string,
-  price: number,
-  quantity: number,
-  discount: number,
+  name: string.isRequired,
+  src: string.isRequired,
+  price: number.isRequired,
+  quantity: number.isRequired,
+  discount: number.isRequired,
 };
 
 export default Product;

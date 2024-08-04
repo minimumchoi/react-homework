@@ -1,4 +1,15 @@
-const dataList = [
+interface Data {
+  productId: number;
+  name: string;
+  price: number;
+  quantity: number;
+  src: string;
+  discount: number;
+}
+
+type DataList = Data[];
+
+const dataList: DataList = [
   {
     productId: 211,
     name: "[풀무원] 탱탱쫄면 (4개입)",

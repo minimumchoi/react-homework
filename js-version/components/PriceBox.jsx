@@ -15,9 +15,9 @@ function PriceBox({ price, discount, quantity }) {
 }
 
 PriceBox.propTypes = {
-  price: number,
-  discount: number,
-  quantity: number,
+  price: number.isRequired,
+  discount: number.isRequired,
+  quantity: number.isRequired,
 };
 
 export default PriceBox;

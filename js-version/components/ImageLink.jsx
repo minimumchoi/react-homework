@@ -11,8 +11,8 @@ function ImageLink({ src, name }) {
 }
 
 ImageLink.propTypes = {
-  src: string,
-  name: string,
+  src: string.isRequired,
+  name: string.isRequired,
 };
 
 export default ImageLink;

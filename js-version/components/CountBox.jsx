@@ -17,5 +17,5 @@ function CountBox({ quantity }) {
 export default CountBox;
 
 CountBox.propTypes = {
-  quantity: number,
+  quantity: number.isRequired,
 };
